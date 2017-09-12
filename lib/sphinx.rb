@@ -1,8 +1,15 @@
-require('./riddle')
+require('riddle')
 
 class Sphinx
-  attr_reader(:riddle1, :riddle2, :riddle3)
   def initialize (riddle1, riddle2, riddle3)
-
+    @riddles = [riddle1, riddle2, riddle3]
+    @riddle_count = 0
   end
-end    
+
+  def ask_question
+    @riddles[@riddle_count].question
+  end
+
+  def check_answer(answer)
+  end
+end
