@@ -24,6 +24,9 @@ _A Ruby Script_
 * _Program returns true if user's guess matches the answer._
   * Example input: "man"
   * Example output: true
+* _Program ignores case when checking user's guess._
+  * Example input: "MAN"
+  * Example output: true
 * _Program stores 3 riddles and answers._
   * Example input: riddle1,riddle2, riddle3
   * Example output: riddle2.answer = "teapot"
