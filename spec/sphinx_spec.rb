@@ -19,12 +19,12 @@ describe("Sphinx") do
   riddle6 = Riddle.new("I have keys but no locks. I have a space but no room. You can enter, but can't go outside. What am I?", "keyboard")
   sphinx = Sphinx.new([riddle1, riddle2, riddle3, riddle4, riddle5, riddle6])
 
-  # riddles = {question => answer}
-  # current_question = sphinx.ask_question
-  # current_answer = riddles[current_question]
-  # expect(sphinx.check_answer(current_answer)).to(eq)
-  it "stores 3 riddles and answers" do
+  it "takes an array of riddle objects and stores them in a sphinx's memory" do
     expect(sphinx.riddles).to(eq([riddle1, riddle2, riddle3, riddle4, riddle5, riddle6]))
+  end
+
+  it "returns correct riddle's question" do
+    expect(riddles.keys).to(include(sphinx.ask_question))
   end
 
   it "returns result when match is false" do
