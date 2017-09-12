@@ -1,6 +1,8 @@
 require_relative('riddle')
 
 class Sphinx
+  attr_reader(:riddles, :riddle_count)
+
   def initialize (riddles)
     @riddles = riddles
     @riddle_count = 0

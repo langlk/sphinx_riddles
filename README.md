@@ -45,6 +45,8 @@ _A Ruby Script_
 * _Program lets user enter Thebes after third correct answer_
   * Example input: "man", "teapot", "teeth"
   * Example output: "Welcome! The ancient treasure of Thebes is yours!"
+* _Program chooses a random riddle at each turn._
+  * Example output: "What starts with a t, ends with a t, and has t in it?"
 
 ## Support and contact details
 
