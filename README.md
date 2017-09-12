@@ -27,8 +27,8 @@ _A Ruby Script_
 * _Program ignores case when checking user's guess._
   * Example input: "MAN"
   * Example output: true
-* _Program stores 3 riddles and answers._
-  * Example input: riddle1, riddle2, riddle3
+* _Program takes an array of riddle objects to store in a sphinx's memory._
+  * Example input: [riddle1, riddle2, riddle3, riddle4, riddle5, riddle6]
   * Example output: riddle2.answer = "teapot"
 * _Program returns correct riddle's question._
   * Example input: riddle1.answer = correct
@@ -45,9 +45,6 @@ _A Ruby Script_
 * _Program lets user enter Thebes after third correct answer_
   * Example input: "man", "teapot", "teeth"
   * Example output: "Welcome! The ancient treasure of Thebes is yours!"
-
-
-
 
 ## Support and contact details
 

@@ -1,8 +1,8 @@
 require_relative('riddle')
 
 class Sphinx
-  def initialize (riddle1, riddle2, riddle3)
-    @riddles = [riddle1, riddle2, riddle3]
+  def initialize (riddles)
+    @riddles = riddles
     @riddle_count = 0
   end
 
