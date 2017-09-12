@@ -4,7 +4,7 @@ require 'pry'
 also_reload('lib/**/*.rb')
 require './lib/sphinx'
 
-riddle1 = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "man")
+riddle1 = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "human")
 riddle2 = Riddle.new("What starts with a t, ends with a t, and has t in it?", "teapot")
 riddle3 = Riddle.new("Thirty white horses on a red hill<br>First they champ<br>Then they stamp<br>Then they stand still.", "teeth")
 riddle4 = Riddle.new("What always ends everything?", "g")

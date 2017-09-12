@@ -4,14 +4,14 @@ require 'pry'
 
 describe("Sphinx") do
   riddles = {
-    "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?" => "man",
+    "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?" => "human",
     "What starts with a t, ends with a t, and has t in it?" => "teapot",
     "Thirty white horses on a red hill\nFirst they champ\nThen they stamp\nThen they stand still." => "teeth",
     "What always ends everything?" => "g",
     "What has four fingers and a thumb, but is not living?" => "glove",
     "I have keys but no locks. I have a space but no room. You can enter, but can't go outside. What am I?" => "keyboard"
   }
-  riddle1 = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "man")
+  riddle1 = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "human")
   riddle2 = Riddle.new("What starts with a t, ends with a t, and has t in it?", "teapot")
   riddle3 = Riddle.new("Thirty white horses on a red hill\nFirst they champ\nThen they stamp\nThen they stand still.", "teeth")
   riddle4 = Riddle.new("What always ends everything?", "g")

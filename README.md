@@ -16,16 +16,16 @@ _A Ruby Script_
 ## Specifications
 ### Riddle
 * _Program stores a riddle question and answer._
-  * Example input: "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night", "man"
-  * Example output: "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night", "man"
+  * Example input: "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night", "human"
+  * Example output: "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night", "human"
 * _Program returns false if user's guess does not match the answer._
   * Example input: "tadpole"
   * Example output: false
 * _Program returns true if user's guess matches the answer._
-  * Example input: "man"
+  * Example input: "human"
   * Example output: true
 * _Program ignores case when checking user's guess._
-  * Example input: "MAN"
+  * Example input: "HUMAN"
   * Example output: true
 
 ### Sphinx  
@@ -45,10 +45,10 @@ _A Ruby Script_
   * Example input: "teapot"
   * Example output: "Correct! Next question...."
 * _Program lets user enter Thebes after third correct answer_
-  * Example input: "man", "teapot", "teeth"
+  * Example input: "human", "teapot", "teeth"
   * Example output: "Welcome! The ancient treasure of Thebes is yours!"
 * _Program resets count after user enters Thebes_
-  * Example input: "man", "teapot", "teeth"
+  * Example input: "human", "teapot", "teeth"
   * Example output: @riddle_count = 0
 * _Program chooses a random riddle at each turn._
   * Example output: "What starts with a t, ends with a t, and has t in it?"

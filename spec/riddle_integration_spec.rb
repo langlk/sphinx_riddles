@@ -5,7 +5,7 @@ set(:show_exceptions, false)
 
 describe('sphinx riddles', {:type => :feature}) do
   riddles = {
-    "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?" => "man",
+    "What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?" => "human",
     "What starts with a t, ends with a t, and has t in it?" => "teapot",
     "Thirty white horses on a red hill" => "teeth",
     "What always ends everything?" => "g",
