@@ -30,7 +30,7 @@ _A Ruby Script_
 * _Program stores 3 riddles and answers._
   * Example input: riddle1, riddle2, riddle3
   * Example output: riddle2.answer = "teapot"
-* _Program returns correct riddles question._
+* _Program returns correct riddle's question._
   * Example input: riddle1.answer = correct
   * Example output: "What starts with a t, ends with a t, and has t in it."
 * _Program checks user input against riddle's answer_
