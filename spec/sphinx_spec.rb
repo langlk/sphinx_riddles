@@ -12,12 +12,25 @@ describe("Sphinx") do
   end
 
   it "returns correct riddle's question" do
-    sphinx.check_answer?("man")
+    sphinx.check_answer("man")
     expect(sphinx.ask_question).to(eq("What starts with a t, ends with a t, and has t in it?"))
   end
 
-  it "checks user input against riddle's answer" do
-    expect(sphinx.check_answer?("teapot")).to(eq(true))
-    expect(sphinx.check_answer?("teapot")).to(eq(false))
+  # it "checks user input against riddle's answer" do
+  #   expect(sphinx.check_answer("teapot")).to(eq(true))
+  #   expect(sphinx.check_answer("teapot")).to(eq(false))
+  # end
+
+  it "returns result when match is false" do
+    expect(sphinx.check_answer("tyrannosaurus")).to(eq("You've been strangled by a sphinx!"))
   end
+
+  it "moves on to the next question when match is true" do
+    expect(sphinx.check_answer("teapot")).to(eq("Correct! Next question... "))
+  end
+
+  it "lets user enter Thebes after third correct answer" do
+    expect(sphinx.check_answer("teeth")).to(eq("Welcome! The ancient treasure of Thebes is yours!"))
+  end
+
 end

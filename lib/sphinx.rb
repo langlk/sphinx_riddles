@@ -10,9 +10,15 @@ class Sphinx
     @riddles[@riddle_count].question
   end
 
-  def check_answer?(answer)
+  def check_answer(answer)
     result = @riddles[@riddle_count].guess?(answer)
-    @riddle_count += 1
-    result
+    if result & (@riddle_count == 2)
+      return "Welcome! The ancient treasure of Thebes is yours!"
+    elsif not result
+      return "You've been strangled by a sphinx!"
+    else
+      @riddle_count += 1
+      return "Correct! Next question... "
+    end
   end
 end

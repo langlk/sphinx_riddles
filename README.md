@@ -33,7 +33,7 @@ _A Ruby Script_
 * _Program returns correct riddle's question._
   * Example input: riddle1.answer = correct
   * Example output: "What starts with a t, ends with a t, and has t in it."
-* _Program checks user input against riddle's answer_
+* _Program checks user input against riddle's answer._
   * Example input: "tyrannosaurus"
   * Example output: false
 * _Program returns result when match is false._
