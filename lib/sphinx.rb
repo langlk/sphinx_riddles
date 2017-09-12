@@ -16,6 +16,7 @@ class Sphinx
       @riddle_count = 0
       return "Welcome! The ancient treasure of Thebes is yours!"
     elsif not result
+      @riddle_count = 0
       return "You've been strangled by a sphinx!"
     else
       @riddle_count += 1

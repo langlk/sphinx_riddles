@@ -43,7 +43,7 @@ _A Ruby Script_
   * Example input: "teapot"
   * Example output: "Correct! Next question...."
 * _Program lets user enter Thebes after third correct answer_
-  * Example input: true, true, true
+  * Example input: "man", "teapot", "teeth"
   * Example output: "Welcome! The ancient treasure of Thebes is yours!"
 
 
