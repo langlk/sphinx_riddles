@@ -12,5 +12,6 @@ class Sphinx
 
   def check_answer(answer)
     @riddle_count += 1
+    return false
   end
 end

@@ -15,4 +15,8 @@ describe("Sphinx") do
     sphinx.check_answer("man")
     expect(sphinx.ask_question).to(eq("What starts with a t, ends with a t, and has t in it?"))
   end
+
+  it "checks user input against riddle's answer" do
+    expect(sphinx.check_answer("tyrannosaurus")).to(eq(false))
+  end
 end
