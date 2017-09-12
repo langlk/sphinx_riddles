@@ -15,6 +15,7 @@ get('/') do
 end
 
 post('/output') do
-
+  response = params["response"]
+  @result = sphinx.check_answer(response)
   erb(:output)
 end

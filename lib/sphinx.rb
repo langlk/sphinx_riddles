@@ -13,6 +13,7 @@ class Sphinx
   def check_answer(answer)
     result = @riddles[@riddle_count].guess?(answer)
     if result & (@riddle_count == 2)
+      @riddle_count = 0
       return "Welcome! The ancient treasure of Thebes is yours!"
     elsif not result
       return "You've been strangled by a sphinx!"
