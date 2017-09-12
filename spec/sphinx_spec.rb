@@ -12,11 +12,12 @@ describe("Sphinx") do
   end
 
   it "returns correct riddle's question" do
-    sphinx.check_answer("man")
+    sphinx.check_answer?("man")
     expect(sphinx.ask_question).to(eq("What starts with a t, ends with a t, and has t in it?"))
   end
 
   it "checks user input against riddle's answer" do
-    expect(sphinx.check_answer("tyrannosaurus")).to(eq(false))
+    expect(sphinx.check_answer?("teapot")).to(eq(true))
+    expect(sphinx.check_answer?("teapot")).to(eq(false))
   end
 end

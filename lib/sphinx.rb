@@ -10,8 +10,9 @@ class Sphinx
     @riddles[@riddle_count].question
   end
 
-  def check_answer(answer)
+  def check_answer?(answer)
+    result = @riddles[@riddle_count].guess?(answer)
     @riddle_count += 1
-    return false
+    result
   end
 end
