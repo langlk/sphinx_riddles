@@ -8,6 +8,6 @@ class Riddle
   end
 
   def guess?(response)
-    @answer == response
+    @answer.downcase == response.downcase
   end
 end
