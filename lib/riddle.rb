@@ -7,7 +7,7 @@ class Riddle
     @answer = answer
   end
 
-  def guess(response)
-
+  def guess?(response)
+    return false
   end
 end
