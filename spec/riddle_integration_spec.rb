@@ -19,11 +19,35 @@ describe('sphinx riddles', {:type => :feature}) do
     click_button('Submit!')
     expect(page).to have_content("You've been strangled by a sphinx!")
   end
-  
+
   it "tells user they're correct and prompts new question" do
     visit('/')
-    fill_in('response', :with => 'I am so leet.')
-    click_button('Submit!')
-    expect(page).to have_content("You've been strangled by a sphinx!")
+    riddles.each do |question, answer|
+      if page.has_content?(question)
+        fill_in('response', :with => answer)
+        click_button('Submit!')
+        expect(page).to have_content("Correct! Next question")
+      end
+    end
+  end
+
+  it "tells user they've won when they've answered 3 questions correctly" do
+    visit('/')
+    2.times do
+      riddles.each do |question, answer|
+        if page.has_content?(question)
+          fill_in('response', :with => answer)
+          click_button('Submit!')
+          click_link("Return to the Gates")
+        end
+      end
+    end
+    riddles.each do |question, answer|
+      if page.has_content?(question)
+        fill_in('response', :with => answer)
+        click_button('Submit!')
+        expect(page).to have_content("Welcome! The ancient treasure of Thebes is yours!")
+      end
+    end
   end
 end
