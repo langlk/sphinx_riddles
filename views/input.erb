@@ -1,0 +1,10 @@
+<h1>You are standing at the Gates of Thebes</h1>
+<h3>The gates are guarded by a sphinx. You must answer her questions correctly to pass. Take care, a wrong answer will lead to your death.</h3>
+
+<form action="/output" method="post">
+  <div class="form-group">
+    <label for="response"><%= @riddle %></label>
+    <input name="response" type="text" class="form-control">
+  </div>
+  <button type="submit" class="btn">Submit!</button>
+</form>

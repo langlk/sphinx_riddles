@@ -1,4 +1,4 @@
-require('riddle')
+require_relative('riddle')
 
 class Sphinx
   def initialize (riddle1, riddle2, riddle3)
