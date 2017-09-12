@@ -52,6 +52,9 @@ _A Ruby Script_
   * Example output: @riddle_count = 0
 * _Program chooses a random riddle at each turn._
   * Example output: "What starts with a t, ends with a t, and has t in it?"
+* _Program does not select duplicate questions in a single round._
+  * Example output: riddle1, riddle5, riddle 3
+
 
 ## Support and contact details
 

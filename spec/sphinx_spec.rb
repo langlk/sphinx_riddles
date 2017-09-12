@@ -23,8 +23,19 @@ describe("Sphinx") do
     expect(sphinx.riddles).to(eq([riddle1, riddle2, riddle3, riddle4, riddle5, riddle6]))
   end
 
-  it "returns correct riddle's question" do
+  it "returns chosen random riddle's question" do
     expect(riddles.keys).to(include(sphinx.ask_question))
+  end
+
+  it "does not select duplicate questions in a single round" do
+    roundqs = []
+    3.times do
+      current_question = sphinx.ask_question
+      roundqs.push(current_question)
+      current_answer = riddles[current_question]
+      sphinx.check_answer(current_answer)
+    end
+    expect((roundqs[0] != roundqs[1]) && (roundqs[0]!= roundqs[2]) && (roundqs[1] != roundqs[2])).to(eq(true))
   end
 
   it "returns result when match is false" do
