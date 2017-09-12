@@ -8,6 +8,6 @@ class Riddle
   end
 
   def guess?(response)
-    return false
+    @answer == response
   end
 end

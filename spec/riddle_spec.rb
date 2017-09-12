@@ -15,5 +15,10 @@ describe('Riddle') do
       riddle = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "man")
       expect(riddle.guess?("tadpole")).to(eq(false))
     end
+
+    it "Program returns true if user's guess matches the answer" do
+      riddle = Riddle.new("What animal walks on 4 legs in the morning, 2 legs during the day, and 3 legs at night?", "man")
+      expect(riddle.guess?("man")).to(eq(true))
+    end
   end
 end
