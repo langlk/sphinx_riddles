@@ -6,12 +6,14 @@
 
 ## Description
 
-_A Ruby Script_
+_A Ruby web app where a user must answer the riddles posed by the Sphinx in order to enter Thebes._
 
 ## Setup/Installation Requirements
 
-* Clone this repository at: https://github.com/MacKLess/sphinx_riddles.git
-* Open app in preferred browser.
+* Clone this repository
+* Run ```bundle install``` in the project root.
+* Run ```ruby app.rb```
+* Open ```localhost:4567``` in your web browser
 
 ## Specifications
 ### Riddle
